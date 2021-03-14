@@ -65,3 +65,36 @@ tabint ## wartości od 0 do 50 i jest ich 10
 
 tab.reshape(5,5) ## w nawiasach wielkość tablicy
 
+tabint.min() 
+## najniższa wartość w array(....) jest '1'
+
+tabint.max()
+## największa '42'
+
+## jeżeli chcemy uzyskać indeks najwyższego lub najniższego elementu
+tabint.argmin()
+## indeks najniższej wartości, jest to indeks 6 --> w array najniższa cyfra, czyli '1', jest na pozycji szóstej; liczyby od '0'
+
+tabint.argmax()
+## indeks najwyżzej wartości, jest to indeks 9, bo '42' jest na miejscu 9, licząc od miejsce/pozycje od '0'
+
+
+tab.shape
+## aby poznać kształt naszej tablicy - jak widzimy nasza tablica to tablica jednowymiarowa z 25 elementami
+
+## aby zmienić jej kształt
+tab.reshape(1,25) ## jedna tablica, 25 kolumn
+
+tab2=tab.reshape(5,5)
+
+tab2
+## czyli teraz tab2 wygląda jak tablica powyżej
+
+tab2.shape ##czyli wymiary naszej drugiej tablicy jak widzimy to 5 wierszy na 5 kolumn
+
+tab.reshape(25,1) ## 25 wierszy, w jednej kolumnie
+
+## jakiego typu są nasze zmienne?
+
+tab.dtype ## jak widzimy są to int'y 64 bitowe
+
