@@ -1,0 +1,67 @@
+conda install numpy
+
+<-- cała biblioteka NumPy opiera się na tablicach i na operacjach z nimi związanych -->
+
+my_list=[1,2,3]
+
+my_list
+
+import numpy as np ## jeżeli chcemy stworzyć tablicę, musimy zaimportować bibliotekę numpy, np.o skrócie np
+
+np.array(my_list)
+
+my_matrix=[[1,2,3],[4,5,6],[7,8,9]]
+
+my_matrix ## a jeżeli chcemy zrobić tablicę NumPy, to. . . 
+
+np.array(my_matrix)  ## tadam!
+
+np.arange(0,10)
+
+np.arange(0,11,2) 
+## jeżeli chcemy co drugą liczbę. 0-11 to przedział, i po przecinku "co drugą"
+
+np.zeros(3)
+
+np.zeros((5,5)) ## tablica wielowymiarowa, tu dwuwymiarowa
+
+np.ones(3) ## tablica jedynek
+
+np.ones((3,3))
+
+np.linspace(0,10,3) 
+## ta komenda tworzy tablice z podanego przedziału. Pokazuje ile ma być w niej elementów, równo od sibeie oddzielonych.
+
+np.linspace(0,10,50) ## od 0 do 10 oddzielone 50 liczbami
+
+np.eye(4) #tablica wypełniona zerami z jedynkami po przekątnej
+
+## generowanie liczb losowych
+ 
+np.random.rand(2) ## dwie liczby losowe z przedziału 0-2
+
+np.random.rand(5,5)
+
+## generowanie liczb z przedziału "Cousina" (Norman Cousin Distribution)
+
+np.random.randn(5,5) ##liczby w okolicach 0, na minusie i na plusie
+
+##losowanie liczby całkowitej
+np.random.randint(1,10) ##jedna liczba
+
+## a jeżeli chcemy kilka liczb z tego przedziału:
+np.random.randint(1,10,10) ## ostatnia liczba to ilość liczb całkowitych
+
+## jakie jeszcze rzeczy możemy zrobić z tablicami?
+tab=np.arange(25)
+
+tab ##liczby od zera do 24
+
+tabint=np.random.randint(0,50,10)
+
+tabint ## wartości od 0 do 50 i jest ich 10
+
+## żeby zmienić kształt tablicy, np. zamiast tablicy zrobić macierz:
+
+tab.reshape(5,5) ## w nawiasach wielkość tablicy
+
