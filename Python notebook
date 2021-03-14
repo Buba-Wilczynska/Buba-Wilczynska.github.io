@@ -1,0 +1,201 @@
+Typy danych
+
+-ciąg znaków
+-numeryczna
+- string value
+
+Słowniki
+
+s={'klucz1':'a1', 'klucz2':'a2'}
+
+Listy, listy bez możliwości zmiany atrybutów; k(1,2,3,4)
+
+FALSE / TRUE 
+
+==; !=, <, >, <=, >=, +, *, ** (reszta z dzielenia), /
+
+"cześć" == "czesc"
+
+2<=5
+
+2==5
+
+2<5
+
+(2<5) and (2<=5)
+
+(2<5) or (2>5)
+
+if(2==2):
+    print("obviously")
+
+if 2==2:
+    print('correct')
+
+if 2==5:
+    print('tak')
+else:
+    print('nie')
+
+if 2==2:
+    print('tak')
+else:
+    print('nie')
+
+if 5<5:
+    print('yes')
+
+if 2==4:
+    print('One')
+elif 2==2:
+    print('Two')
+else:
+    print('Three')
+
+if 2==4:
+    print('One')
+elif 2==3:
+    print('Two')
+else:
+    print('Three')
+
+imię = "Buba"
+
+wiek = 25
+
+print ('{} ma {} lat'.format(imię,wiek))
+
+alfabet=['a','b','c']
+
+alfabet.append('d') ## dodawanie atrybutów
+
+alfabet
+
+alfabet[1:] 
+
+## liczymy od '0' np. [0=a,1=b,2=c,3=d] 
+## 1: pokazuje łącznie z be, wszytskie atrybuty do końca 
+
+alfabet[:1] 
+## :1 pokazuje wszystkie do prawej, ale już bez wartości 1 (czyli b)
+
+alfabet[3]='x' ##zmienianie atrybutu
+
+alfabet
+
+##PĘTLE FOR
+
+
+
+seq=[1,2,3,4,5]
+
+for cyfry in seq:
+    print(cyfry)
+
+for cyfry in seq: ## nazwa nie ma znaczenia (nazwa "cyfry")
+    print("Hej!")
+
+FUNKCJA RANGE
+
+#range 
+range(5)
+
+for i in range(5): 
+    ##pokazuje wszystkie liczby w przedziale, wyłączając ostatnią
+    print(i)
+
+range(2,5)
+
+x=[0,1,2,3,4,5,6,7] #przykładowa lista
+
+out=[] #pusta lista
+
+for liczba in x:#przykładowa nazwa 
+    out.append(liczba**2) ## do potęgi drugiej
+print(out)
+
+[item**2 for item in x] ## inny sposób
+
+x
+
+FUNKCJE
+
+def nowa_funkcja(zmienna1="domyślna"):
+    print(zmienna1)
+
+nowa_funkcja ##środowiko mówi nam, że jest to funkcja w "main"
+
+nowa_funkcja() ##aby ją wywołać
+
+nowa_funkcja('nowa wartość') 
+##jeśli chcemy zmienić wartość // albo nowa_funkcja(zmienna1="nowa wartość")
+
+nowa_funkcja()
+
+def square(x):
+    return x**2 ## return to to co nasza funkcja ma zwracać
+## funkcja która podnosi do kwadratu, taka już istnieje, ale sobie ją napiszemy
+
+a=2
+
+b=nowa_funkcja()
+
+b ##ale wciąż bez jakiejkolwiek wartości. Jeżeli chcemy dopisać wartość, to musimy mieć w niej return
+
+b=square(a) ##czyli a=2 do kwadratu
+
+b
+
+ lambda zmienna: zmienna*2 ## coś nie działało
+
+ciąg=[1,2,3,4,5]
+
+map(square, ciag) 
+
+tekst='Cześć wszystkim jestem Buba'
+
+tekst.split() ##rozdziela słowa
+
+tekst.lower() ##wszystkie litery małe
+
+tekst.upper() ##wszystkie drukowane
+
+tekst2='Jedziemy na wycieczkę, ***** ***'
+
+tekst2
+
+tekst3='Jedziemy na #wycieczkę, bierzemy Misia w #teczkę'
+tekst3.split('#') ##dzieli po hsztagach
+
+tekst3.split('#')[0] ##bez znaków po hasztagach
+
+tekst4="Miłej niedzieli! #goodvibes #sunday #slowlife"
+
+tekst4.split('#')
+
+tekst4.split('#')[0] ##tekst posta bez hasztagów
+
+tekst4.split('#')[1] ##wyświetlenie pierwszego hasztagu (itd.)
+
+s={'klucz1':'a1', 'klucz2':'a2'} ##powrót do słownika
+
+s
+
+s.keys() ## jeżeli chcemy wyświetlić same klucze
+
+s.items() ## jeżeli chcemy wszystko
+
+ciąg
+
+ciąg.pop() ## usuwa ostatni element i go wypisuje
+
+ciąg
+
+"x" in ciąg #czy x jest w liście 'ciąg' znaków
+
+3 in ciąg
+
+'x' in ['y', 'z', 'x'] #czy x jest w . . . 
+
+'q' in ['y','u','q','r']
+
