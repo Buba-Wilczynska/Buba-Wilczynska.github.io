@@ -95,5 +95,52 @@ function setUserName() {
     setUserName();
   }
                   
-                  
-                  
+
+
+  
+  MALOWANIE MYSZĄ
+  
+  1. 
+  
+  draw = function() {
+    ellipse(mouseX, mouseY, 20, 20);
+  };
+  
+  
+  2. 
+  draw = function() {
+    if (mouseIsPressed) {
+        
+        noStroke();
+        fill(125, 151, 184);
+        ellipse(mouseX, mouseY, 20, 20);
+}
+};
+
+ZAOKRĄGLANIE LICZB I ZABAWA Z MONETĄ
+
+// generate a random number between 0 and 1
+var number = random(0, 3);
+
+var integer = round(number);
+
+// display the text
+fill(0, 0, 0);
+textSize(100);
+text(number, 100, 232);
+text(integer, 160, 350);
+                 
+if (integer === 0) {
+    fill(132, 0, 255);
+} 
+else if (integer === 1) {
+    fill(255, 255, 0);
+}
+else if (integer === 2) {
+    fill(255, 0, 0);
+}
+else {
+    fill(0, 196, 255);
+}
+
+ellipse(200, 200, 100, 100);
