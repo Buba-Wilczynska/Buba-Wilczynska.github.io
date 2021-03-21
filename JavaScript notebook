@@ -5,11 +5,33 @@ TYPY DANYCH
 
 LICZBOWE
 TEKSTOWE
-LOGICZNE (FALSE, TRUE, <, >, <=, >=)
+LOGICZNE (FALSE, TRUE, <, >, <=, >=, ===, !==)
+
+Fragment x > 0 nazywamy wyrażeniem warunkowym - co oznacza, że wyrażenie musi 
+sprowadzać się do prawdy lub fałszu. Kiedy wartość jest true lub false, nazywamy 
+tę wartość logiczną ( w przeciwieństwie do liczby czy napisu). 
+Możemy użyć jednocześnie && i || w tym samym warunku, jeśli mamy bardziej 
+złożony warunek do sprawdzenia. Wystarczy użyć nawiasów do pogrupowania wyrażeń, 
+tak aby program się nie pogubił podczas wykonywania:
+
+var myAge = 28;
+if ((myAge >= 0 && myAge < 3)  || myAge > 90) {
+println('Nie jesteś w swoim żywiole.');
+}
 
 Funkcje warunkowe if. . . (warunek) {działanie}
                   else . . . 
+wyrażenie warunkowe - wyrażenie musi sprowadzać się do prawdy lub fałszu. 
+Kiedy wartość jest true lub false, nazywamy tę wartość logiczną ( w przeciwieństwie do liczby czy napisu). 
 
+LOSOWOŚĆ 
+
+random(x,y)
+
+'round()': Zaokrągla liczbę w dół, jeśli część dziesiętna liczby jest mniejsza niż 5, albo w górę, 
+          jeśli część dziesiętna jest równa lub większa 5.
+ ceil(): zawsze zaokrągla liczbę w górę, co w rezultacie daje kolejną liczbę całkowitą.
+'floor()': zawsze zaokrągla w dół, do liczby całkowitej.
 
 
 
